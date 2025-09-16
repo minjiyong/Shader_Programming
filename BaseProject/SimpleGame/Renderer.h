@@ -39,5 +39,8 @@ private:
 	GLuint m_VBOTestColor;
 	// lecture 4
 	GLuint m_TestShader;
+
+	// Time
+	float m_time = 0.f;
 };
 

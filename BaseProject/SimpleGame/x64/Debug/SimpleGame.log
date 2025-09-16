@@ -1,2 +1,5 @@
 ﻿  Renderer.cpp
+D:\TUK\3-2\Shader_Programming\BaseProject\SimpleGame\Renderer.cpp(233,12): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+  (소스 파일 '/Renderer.cpp'을(를) 컴파일하는 중)
+  
   SimpleGame.vcxproj -> D:\TUK\3-2\Shader_Programming\BaseProject\x64\Debug\SimpleGame.exe
