@@ -37,5 +37,7 @@ private:
 	GLuint m_VBOTestPos;
 	// lecture 3
 	GLuint m_VBOTestColor;
+	// lecture 4
+	GLuint m_TestShader;
 };
 
