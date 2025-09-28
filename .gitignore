@@ -1,0 +1,67 @@
+# ------------ Visual Studio ------------
+.vs/
+*.suo
+*.user
+*.userosscache
+*.VC.db
+*.VC.opendb
+*.sln.docstates
+
+# ------------ Build / Intermediate ------------
+# 대표 빌드 폴더들(이름 대소문자 섞여도 커버)
+[Bb]uild*/
+[Bb]in*/
+[Oo]bj*/
+ipch/
+Debug*/
+Release*/
+x64/
+x86/
+arm*/
+arm64*/
+
+# MSBuild 중간 산출물
+*.tlog
+*.lastbuildstate
+*.log
+*.cachefile
+*.idb
+*.ilk
+*.pdb
+*.pch
+*.tmp
+*.rsp
+*.trx
+
+# C/C++ 산출물
+*.obj
+*.exe
+*.dll
+*.lib
+*.exp
+*.ilk
+*.out
+*.app
+*.so
+*.dylib
+*.a
+*.lo
+*.o
+*.slo
+*.gch
+*.mod
+*.smod
+*.lai
+*.la
+
+# ------------ CMake (있다면) ------------
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+
+# ------------ 기타 IDE ------------
+# VSCode 빌드 산출물(있다면)
+.vscode/**.db
+
+# ------------ 폴더별 일괄 처리(서브프로젝트 포함) ------------
+# 하위 폴더 어디에 있든 위 패턴들이 모두 적용됩니다.
