@@ -7,3 +7,4 @@ draw call 이 많아질수록 성능 하락, 줄이자.
 
 glVertexAttribPointer(aRadiusLoc, 1, GL_FLOAT, GL_FALSE, sizeof(float) * 4, (GLvoid*)(sizeof(float) * 3));
 첫번째: 1개짜리 1(float니까), 두번째: 4칸씩 떨어짐, 세번째: 처음이 어디부터 시작인지 
+

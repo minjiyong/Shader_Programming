@@ -170,6 +170,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Shaders\FullScreen.fs" />
+    <None Include="Shaders\FullScreen.vs" />
     <None Include="Shaders\GridMesh.fs" />
     <None Include="Shaders\GridMesh.vs" />
     <None Include="Shaders\Particle.fs" />
