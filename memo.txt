@@ -8,3 +8,21 @@ draw call 이 많아질수록 성능 하락, 줄이자.
 glVertexAttribPointer(aRadiusLoc, 1, GL_FLOAT, GL_FALSE, sizeof(float) * 4, (GLvoid*)(sizeof(float) * 3));
 첫번째: 1개짜리 1(float니까), 두번째: 4칸씩 떨어짐, 세번째: 처음이 어디부터 시작인지 
 
+
+1027
+git과 github의 차이
+git - 오픈소스 기반의 버전 컨트롤 서비스
+github/gitlab - git에 부가기능을 여러 개 붙여 만든 것
+
+git에서 로컬PC로 싹 받아오는 명령어 - clone, 저장소 전부를 복제한다(branch까지도).
+장점: 누구의 도움도 받지 않고 혼자서 개발 가능, 마지막으로 clone한 PC만 있다면 복구가 가능
+
+git은 파일 링크를 관리한다. 메모리로 비유하자면 포인터를 갖고 있는 느낌.
+
+대부분 로컬에서 실행됨.
+
+다른 사람이 주로 건드리고 있는 파일은 연인과 같다.
+add하기 전에 status를 꼭 쳐보고 하기.
+
+git은 데이터 삭제 자체가 불가능하다.
+최대한 바뀐 것만 저장하려고 한다.

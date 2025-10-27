@@ -1,2 +1,2 @@
-﻿  SimpleGame.cpp
-  SimpleGame.vcxproj -> D:\TUK\3-2\Shader_Programming\BaseProject\x64\Debug\SimpleGame.exe
+﻿  Renderer.cpp
+D:\TUK\3-2\Shader_Programming\BaseProject\SimpleGame\Renderer.cpp(1,10): error C1853: 'x64\Debug\SimpleGame.pch' 미리 컴파일된 헤더 파일이 다른 버전의 컴파일러에서 만들어졌거나, 미리 컴파일된 헤더가 C++인데 C에서 사용하고 있거나 그 반대의 경우입니다.

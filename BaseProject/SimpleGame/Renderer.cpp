@@ -27,11 +27,25 @@ void Renderer::Initialize(int windowSizeX, int windowSizeY)
 	CreateGridMesh(100, 100);
 
 	//Create Particles
-	GenerateParticles(1000);
+	GenerateParticles(10000);
 
 	if (m_SolidRectShader > 0 && m_VBORect > 0)
 	{
 		m_Initialized = true;
+	}
+
+	// 1021 Fill Points
+	int index = 0;
+	for (int i = 0; i < 400; i++)
+	{
+		float x = 2 * ((float)rand() / (float)RAND_MAX) - 1;
+		float y = 2 * ((float)rand() / (float)RAND_MAX) - 1;
+		float st = 10 * ((float)rand() / (float)RAND_MAX);
+		float lt = ((float)rand() / (float)RAND_MAX);
+		m_Points[index] = x; index++;
+		m_Points[index] = y; index++;
+		m_Points[index] = st; index++;
+		m_Points[index] = lt; index++;
 	}
 }
 
@@ -299,17 +313,25 @@ void Renderer::DrawSolidRect(float x, float y, float z, float size, float r, flo
 
 void Renderer::DrawGridMesh()
 {
-	m_time += 0.016;
+	m_time += 0.005;
 
-	//Program select
+	//1021
+	float points[12] = { 0,0,2,2,
+				   0.5,0,3,3,
+				   -0.5,0,4,4 };
+
 	int shader = m_GridMeshShader;
 	glUseProgram(shader);
 
 	int uTimeLoc = glGetUniformLocation(shader, "u_Time");
 	glUniform1f(uTimeLoc, m_time);
 
-	int attribPosition = glGetAttribLocation(m_SolidRectShader, "a_Position");
+	// 1021 points를 array로 넣어서.. 전달
+	int uPointsLoc = glGetUniformLocation(shader, "u_Points");
+	glUniform4fv(uPointsLoc, 100, m_Points);   // uPoints가 array라서 glUniform4fv
 
+
+	int attribPosition = glGetAttribLocation(shader, "a_Position");
 	glEnableVertexAttribArray(attribPosition);
 	glBindBuffer(GL_ARRAY_BUFFER, m_GridMeshVBO);
 	glVertexAttribPointer(attribPosition, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 3, 0);
@@ -318,7 +340,6 @@ void Renderer::DrawGridMesh()
 	//glDrawArrays(GL_LINE_STRIP, 0, m_GridMeshVertexCount);
 
 	glDisableVertexAttribArray(attribPosition);
-
 	glBindFramebuffer(GL_FRAMEBUFFER, 0);
 }
 
