@@ -36,7 +36,7 @@ void Renderer::Initialize(int windowSizeX, int windowSizeY)
 
 	// 1021 Fill Points
 	int index = 0;
-	for (int i = 0; i < 400; i++)
+	for (int i = 0; i < 100; i++)
 	{
 		float x = 2 * ((float)rand() / (float)RAND_MAX) - 1;
 		float y = 2 * ((float)rand() / (float)RAND_MAX) - 1;
@@ -81,15 +81,20 @@ void Renderer::CompileAllShaderPrograms()
 	m_FullScreenShader = CompileShaders(
 		"./Shaders/FullScreen.vs",
 		"./Shaders/FullScreen.fs");
+
+	m_FSShader = CompileShaders(
+		"./Shaders/FS.vs",
+		"./Shaders/FS.fs");
 }
 
 void Renderer::DeleteAllShaderPrograms()
 {
-	glDeleteShader(m_SolidRectShader);
-	glDeleteShader(m_TestShader);
-	glDeleteShader(m_ParticleShader);
-	glDeleteShader(m_GridMeshShader);
-	glDeleteShader(m_FullScreenShader);
+	glDeleteProgram(m_SolidRectShader);
+	glDeleteProgram(m_TestShader);
+	glDeleteProgram(m_ParticleShader);
+	glDeleteProgram(m_GridMeshShader);
+	glDeleteProgram(m_FullScreenShader);
+	glDeleteProgram(m_FSShader);
 }
 
 void Renderer::CreateVertexBufferObjects()
@@ -168,6 +173,18 @@ void Renderer::CreateVertexBufferObjects()
 	glGenBuffers(1, &m_VBOFullScreen);
 	glBindBuffer(GL_ARRAY_BUFFER, m_VBOFullScreen);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(fullrect), fullrect, GL_STATIC_DRAW);
+
+
+	float fullrectFS[]
+		=
+	{
+		-1.f, -1.f, 0.f, 1.f, 1.f, 0.f, -1.f, 1.f, 0.f, //Triangle1
+		-1.f, -1.f, 0.f, 1.f, -1.f, 0.f, 1.f, 1.f, 0.f, //Triangle2
+	};
+
+	glGenBuffers(1, &m_VBOFS);
+	glBindBuffer(GL_ARRAY_BUFFER, m_VBOFS);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(fullrectFS), fullrectFS, GL_STATIC_DRAW);
 }
 
 void Renderer::AddShader(GLuint ShaderProgram, const char* pShaderText, GLenum ShaderType)
@@ -367,6 +384,30 @@ void Renderer::DrawFullScreenColor(float r, float g, float b, float a)
 	glBindFramebuffer(GL_FRAMEBUFFER, 0);
 
 	glDisable(GL_BLEND);
+}
+
+void Renderer::DrawFS()
+{
+	m_time += 0.005;
+
+	int shader = m_FSShader;
+
+	//Program select
+	glUseProgram(shader);
+
+	int uTimeLoc = glGetUniformLocation(shader, "u_Time");
+	glUniform1f(uTimeLoc, m_time);
+
+	int attribPosition = glGetAttribLocation(shader, "a_Position");
+	glEnableVertexAttribArray(attribPosition);
+	glBindBuffer(GL_ARRAY_BUFFER, m_VBOFS);
+	glVertexAttribPointer(attribPosition, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 3, 0);
+
+	glDrawArrays(GL_TRIANGLES, 0, 6);
+
+	glDisableVertexAttribArray(attribPosition);
+
+	glBindFramebuffer(GL_FRAMEBUFFER, 0);
 }
 
 void Renderer::DrawTest()

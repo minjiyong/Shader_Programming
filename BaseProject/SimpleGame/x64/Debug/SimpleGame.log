@@ -1,2 +1,14 @@
 ﻿  Renderer.cpp
-D:\TUK\3-2\Shader_Programming\BaseProject\SimpleGame\Renderer.cpp(1,10): error C1853: 'x64\Debug\SimpleGame.pch' 미리 컴파일된 헤더 파일이 다른 버전의 컴파일러에서 만들어졌거나, 미리 컴파일된 헤더가 C++인데 C에서 사용하고 있거나 그 반대의 경우입니다.
+D:\TUK\3-2\Shader_Programming\BaseProject\SimpleGame\Renderer.cpp(333,12): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+  (소스 파일 '/Renderer.cpp'을(를) 컴파일하는 중)
+  
+D:\TUK\3-2\Shader_Programming\BaseProject\SimpleGame\Renderer.cpp(391,12): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+  (소스 파일 '/Renderer.cpp'을(를) 컴파일하는 중)
+  
+D:\TUK\3-2\Shader_Programming\BaseProject\SimpleGame\Renderer.cpp(415,12): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+  (소스 파일 '/Renderer.cpp'을(를) 컴파일하는 중)
+  
+D:\TUK\3-2\Shader_Programming\BaseProject\SimpleGame\Renderer.cpp(452,12): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+  (소스 파일 '/Renderer.cpp'을(를) 컴파일하는 중)
+  
+  SimpleGame.vcxproj -> D:\TUK\3-2\Shader_Programming\BaseProject\x64\Debug\SimpleGame.exe

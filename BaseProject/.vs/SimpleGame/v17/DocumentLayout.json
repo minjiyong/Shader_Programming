@@ -7,28 +7,28 @@
       "RelativeMoniker": "D:0:0:{25179D6C-FA85-4619-8EDB-AC241382F6CA}|SimpleGame\\SimpleGame.vcxproj|solutionrelative:SimpleGame\\SimpleGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25179D6C-FA85-4619-8EDB-AC241382F6CA}|SimpleGame\\SimpleGame.vcxproj|D:\\TUK\\3-2\\Shader_Programming\\BaseProject\\SimpleGame\\LoadPng.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{25179D6C-FA85-4619-8EDB-AC241382F6CA}|SimpleGame\\SimpleGame.vcxproj|solutionrelative:SimpleGame\\LoadPng.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25179D6C-FA85-4619-8EDB-AC241382F6CA}|SimpleGame\\SimpleGame.vcxproj|D:\\TUK\\3-2\\Shader_Programming\\BaseProject\\SimpleGame\\LoadPng.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{25179D6C-FA85-4619-8EDB-AC241382F6CA}|SimpleGame\\SimpleGame.vcxproj|solutionrelative:SimpleGame\\LoadPng.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25179D6C-FA85-4619-8EDB-AC241382F6CA}|SimpleGame\\SimpleGame.vcxproj|D:\\TUK\\3-2\\Shader_Programming\\BaseProject\\SimpleGame\\Shaders\\FS.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{25179D6C-FA85-4619-8EDB-AC241382F6CA}|SimpleGame\\SimpleGame.vcxproj|solutionrelative:SimpleGame\\Shaders\\FS.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{25179D6C-FA85-4619-8EDB-AC241382F6CA}|SimpleGame\\SimpleGame.vcxproj|D:\\TUK\\3-2\\Shader_Programming\\BaseProject\\SimpleGame\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{25179D6C-FA85-4619-8EDB-AC241382F6CA}|SimpleGame\\SimpleGame.vcxproj|solutionrelative:SimpleGame\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25179D6C-FA85-4619-8EDB-AC241382F6CA}|SimpleGame\\SimpleGame.vcxproj|D:\\TUK\\3-2\\Shader_Programming\\BaseProject\\SimpleGame\\Shaders\\FS.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{25179D6C-FA85-4619-8EDB-AC241382F6CA}|SimpleGame\\SimpleGame.vcxproj|solutionrelative:SimpleGame\\Shaders\\FS.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{25179D6C-FA85-4619-8EDB-AC241382F6CA}|SimpleGame\\SimpleGame.vcxproj|D:\\TUK\\3-2\\Shader_Programming\\BaseProject\\SimpleGame\\Renderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{25179D6C-FA85-4619-8EDB-AC241382F6CA}|SimpleGame\\SimpleGame.vcxproj|solutionrelative:SimpleGame\\Renderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\TUK\\3-2\\Shader_Programming\\BaseProject\\SimpleGame\\LoadPng.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SimpleGame\\LoadPng.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\TUK\\3-2\\Shader_Programming\\BaseProject\\SimpleGame\\LoadPng.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SimpleGame\\LoadPng.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\TUK\\3-2\\Shader_Programming\\BaseProject\\SimpleGame\\Shaders\\FS.vs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SimpleGame\\Shaders\\FS.vs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\TUK\\3-2\\Shader_Programming\\BaseProject\\SimpleGame\\Shaders\\FS.fs||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SimpleGame\\Shaders\\FS.fs||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +42,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LoadPng.h",
               "DocumentMoniker": "D:\\TUK\\3-2\\Shader_Programming\\BaseProject\\SimpleGame\\LoadPng.h",
               "RelativeDocumentMoniker": "SimpleGame\\LoadPng.h",
@@ -50,12 +50,11 @@
               "RelativeToolTip": "SimpleGame\\LoadPng.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-17T07:05:48.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T07:05:48.669Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "LoadPng.cpp",
               "DocumentMoniker": "D:\\TUK\\3-2\\Shader_Programming\\BaseProject\\SimpleGame\\LoadPng.cpp",
               "RelativeDocumentMoniker": "SimpleGame\\LoadPng.cpp",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "SimpleGame\\LoadPng.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-17T07:05:47.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T07:05:47.623Z"
             },
             {
               "$type": "Document",
@@ -80,7 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "FS.fs",
               "DocumentMoniker": "D:\\TUK\\3-2\\Shader_Programming\\BaseProject\\SimpleGame\\Shaders\\FS.fs",
               "RelativeDocumentMoniker": "SimpleGame\\Shaders\\FS.fs",
@@ -88,8 +86,7 @@
               "RelativeToolTip": "SimpleGame\\Shaders\\FS.fs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-11T03:57:24.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-11T03:57:24.308Z"
             },
             {
               "$type": "Document",
@@ -99,14 +96,14 @@
               "RelativeDocumentMoniker": "SimpleGame\\SimpleGame.cpp",
               "ToolTip": "D:\\TUK\\3-2\\Shader_Programming\\BaseProject\\SimpleGame\\SimpleGame.cpp",
               "RelativeToolTip": "SimpleGame\\SimpleGame.cpp",
-              "ViewState": "AgIAADQAAAAAAAAAAAAAwEwAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACIAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-02T04:12:13.22Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Renderer.h",
               "DocumentMoniker": "D:\\TUK\\3-2\\Shader_Programming\\BaseProject\\SimpleGame\\Renderer.h",
               "RelativeDocumentMoniker": "SimpleGame\\Renderer.h",
@@ -118,13 +115,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Renderer.cpp",
               "DocumentMoniker": "D:\\TUK\\3-2\\Shader_Programming\\BaseProject\\SimpleGame\\Renderer.cpp",
               "RelativeDocumentMoniker": "SimpleGame\\Renderer.cpp",
               "ToolTip": "D:\\TUK\\3-2\\Shader_Programming\\BaseProject\\SimpleGame\\Renderer.cpp",
               "RelativeToolTip": "SimpleGame\\Renderer.cpp",
-              "ViewState": "AgIAADIBAAAAAAAAAAAhwI8BAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAlwI8BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-02T04:12:15.096Z"
             }
