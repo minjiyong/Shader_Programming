@@ -1,10 +1,9 @@
 #version 330
 
-in
-vec3 a_Position;
+in vec3 a_Position;
 
-out
-vec4 v_Color;
+out vec4 v_Color;
+out vec2 v_UV;
 
 uniform float u_Time;
 const float c_PI = 3.141592;
@@ -12,13 +11,14 @@ const float c_PI = 3.141592;
 #define MAX_POINTS 100
 uniform vec4 u_Points[MAX_POINTS];
 
+// 1117 add Texture
 void Flag() // 1014
 {
     vec4 newPosition = vec4(a_Position, 1);
 
     float value = a_Position.x + 0.5; // 0~1
 
-    newPosition.y = newPosition.y * (1 - value);
+    //newPosition.y = newPosition.y * (1 - value);
    
     float dX = 0f;
     float dY = 0.5 * value * sin(2 * value * c_PI - u_Time * 4);
@@ -29,6 +29,7 @@ void Flag() // 1014
     gl_Position = newPosition;
 
     v_Color = vec4(newColor);
+    v_UV = vec2(a_Position.x + 0.5, 0.5 - a_Position.y);
 }
 
 void Wave()
@@ -92,8 +93,8 @@ void RainDrop()
 
 void main()
 {
-    //Flag();
+    Flag();
     //Wave();
-    RainDrop();
+    //RainDrop();
 
 }

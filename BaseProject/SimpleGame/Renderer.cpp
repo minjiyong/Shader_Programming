@@ -29,6 +29,10 @@ void Renderer::Initialize(int windowSizeX, int windowSizeY)
 	//Create Particles
 	GenerateParticles(10000);
 
+	//Create Textures
+	m_RGBTexture = CreatePngTexture("./rgb.png", GL_NEAREST);
+	m_Texture0 = CreatePngTexture("./poke.png", GL_NEAREST);
+
 	if (m_SolidRectShader > 0 && m_VBORect > 0)
 	{
 		m_Initialized = true;
@@ -343,6 +347,11 @@ void Renderer::DrawGridMesh()
 	int uTimeLoc = glGetUniformLocation(shader, "u_Time");
 	glUniform1f(uTimeLoc, m_time);
 
+	//1117
+	int uTextureLoc = glGetUniformLocation(shader, "u_RGBTexture");
+	glUniform1i(uTextureLoc, 0);
+	glBindTexture(GL_TEXTURE_2D, m_Texture0);
+
 	// 1021 points를 array로 넣어서.. 전달
 	int uPointsLoc = glGetUniformLocation(shader, "u_Points");
 	glUniform4fv(uPointsLoc, 100, m_Points);   // uPoints가 array라서 glUniform4fv
@@ -397,6 +406,10 @@ void Renderer::DrawFS()
 
 	int uTimeLoc = glGetUniformLocation(shader, "u_Time");
 	glUniform1f(uTimeLoc, m_time);
+
+	int uTextureLoc = glGetUniformLocation(shader, "u_RGBTexture");
+	glUniform1i(uTextureLoc, 0);
+	glBindTexture(GL_TEXTURE_2D, m_RGBTexture);
 
 	int attribPosition = glGetAttribLocation(shader, "a_Position");
 	glEnableVertexAttribArray(attribPosition);
@@ -748,4 +761,29 @@ void Renderer::CreateGridMesh(int x, int y)
 
 	delete[] point;
 	delete[] vertices;
+}
+
+
+GLuint Renderer::CreatePngTexture(char* filePath, GLuint samplingMethod)
+{
+	//Load Png
+	std::vector<unsigned char> image;
+	unsigned width, height;
+	unsigned error = lodepng::decode(image, width, height, filePath);
+	if (error != 0)
+	{
+		std::cout << "PNG image loading failed:" << filePath << std::endl;
+		assert(0);
+	}
+
+	GLuint temp;
+	glGenTextures(1, &temp);
+	glBindTexture(GL_TEXTURE_2D, temp);
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA,
+		GL_UNSIGNED_BYTE, &image[0]);
+
+	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, samplingMethod);
+	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, samplingMethod);
+
+	return temp;
 }
