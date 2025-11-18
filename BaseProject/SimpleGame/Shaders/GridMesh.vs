@@ -18,7 +18,7 @@ void Flag() // 1014
 
     float value = a_Position.x + 0.5; // 0~1
 
-    //newPosition.y = newPosition.y * (1 - value);
+    newPosition.y = newPosition.y * (1 - value);
    
     float dX = 0f;
     float dY = 0.5 * value * sin(2 * value * c_PI - u_Time * 4);

@@ -397,7 +397,7 @@ void Renderer::DrawFullScreenColor(float r, float g, float b, float a)
 
 void Renderer::DrawFS()
 {
-	m_time += 0.005;
+	m_time += 0.01;
 
 	int shader = m_FSShader;
 
