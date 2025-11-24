@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
@@ -51,8 +51,7 @@
               "ViewState": "AgIAAHcBAAAAAAAAAAAAwI8BAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-02T04:12:15.096Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -65,8 +64,7 @@
               "ViewState": "AgIAAA4AAAAAAAAAAAAlwB0AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-02T04:12:13.22Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -82,6 +80,10 @@
               "IsPinned": true
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "GridMesh.fs",
@@ -91,8 +93,7 @@
               "RelativeToolTip": "SimpleGame\\Shaders\\GridMesh.fs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-17T08:08:51.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T08:08:51.394Z"
             },
             {
               "$type": "Document",
@@ -104,8 +105,7 @@
               "RelativeToolTip": "SimpleGame\\Shaders\\GridMesh.vs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAABQAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-17T08:07:32.371Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T08:07:32.371Z"
             },
             {
               "$type": "Document",
@@ -117,8 +117,7 @@
               "RelativeToolTip": "SimpleGame\\Shaders\\FS.vs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-11T03:57:14.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-11T03:57:14.84Z"
             },
             {
               "$type": "Document",

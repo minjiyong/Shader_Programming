@@ -4,6 +4,9 @@ layout(location = 0) out vec4 FragColor;
 in vec2 v_UV;
 
 uniform sampler2D u_RGBTexture;
+uniform sampler2D u_DigitTexture;
+uniform sampler2D u_NumTexture;
+
 uniform float u_Time;   // 시간(초 단위)
 
 const float PI = 3.141592;
@@ -87,6 +90,53 @@ void Q3()
     FragColor = newColor;
 }
 
+void HorizontalBrick()
+{
+    vec2 newUV = vec2(v_UV.x, v_UV.y);  //0~1, left top (0, 0)
+    float rCount = 3;
+    float sAmount = 0.5;
+    float x = fract(newUV.x*rCount) + floor(newUV.y*rCount + 1) * sAmount; //0~1, 0~1
+    float y = fract(newUV.y*rCount); //0~1, 0~1
+
+    vec4 newColor = texture(u_RGBTexture, vec2(x, y));
+    FragColor = newColor;
+}
+
+void VerticalBrick()
+{
+    vec2 newUV = vec2(v_UV.x, v_UV.y);  //0~1, left top (0, 0)
+    float x = fract(newUV.x*2);  //0~1, 0~1
+    float y = fract(newUV.y*2) + floor(newUV.x*2) * 0.5;  //0~1, 0~1
+
+    vec4 newColor = texture(u_RGBTexture, vec2(x, y));
+    FragColor = newColor;
+}
+
+void Digit()
+{
+    FragColor = texture(u_DigitTexture, v_UV);
+}
+
+void Digit_Num()
+{
+    int digit = int(u_Time)%10;
+
+    int tileIndex = (digit + 9)%10;
+
+    // 내가 짠거
+    //float offX = tileIndex * 0.2;
+    //float offY = round(tileIndex * 0.1 + 0.1) * 0.5;   // 12345 = 0. 67890 = 0.5
+
+    // 교수님 ver
+    //float offX = float(tileIndex % 5) * 0.2;
+    //float offY = floor(float(tileIndex) * 0.2) * 0.5;
+
+    float tx = v_UV.x * 0.2 + offX;
+    float ty = v_UV.y * 0.5 + offY;
+
+    FragColor = texture(u_NumTexture, vec2(tx, ty));
+}
+
 void main()
 {
    // Test();
@@ -94,5 +144,9 @@ void main()
    // Flag();
    // Q1();
    // Q2();
-   Q3();
+   //Q3();
+   //HorizontalBrick();
+   //VerticalBrick();
+   //Digit();
+   Digit_Num();
 }
