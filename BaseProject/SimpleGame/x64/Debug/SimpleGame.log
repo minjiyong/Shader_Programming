@@ -1,20 +1,9 @@
 ﻿  Renderer.cpp
-D:\TUK\3-2\Shader_Programming\BaseProject\SimpleGame\Renderer.cpp(348,12): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
-  (소스 파일 '/Renderer.cpp'을(를) 컴파일하는 중)
-  
-D:\TUK\3-2\Shader_Programming\BaseProject\SimpleGame\Renderer.cpp(411,12): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
-  (소스 파일 '/Renderer.cpp'을(를) 컴파일하는 중)
-  
-D:\TUK\3-2\Shader_Programming\BaseProject\SimpleGame\Renderer.cpp(465,12): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
-  (소스 파일 '/Renderer.cpp'을(를) 컴파일하는 중)
-  
-D:\TUK\3-2\Shader_Programming\BaseProject\SimpleGame\Renderer.cpp(502,12): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
-  (소스 파일 '/Renderer.cpp'을(를) 컴파일하는 중)
-  
-D:\TUK\3-2\Shader_Programming\BaseProject\SimpleGame\Renderer.cpp(822,56): warning C4244: '인수': 'GLuint'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/Renderer.cpp'을(를) 컴파일하는 중)
-  
-D:\TUK\3-2\Shader_Programming\BaseProject\SimpleGame\Renderer.cpp(823,56): warning C4244: '인수': 'GLuint'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/Renderer.cpp'을(를) 컴파일하는 중)
-  
+D:\TUK\3-2\Shader_Programming\BaseProject\SimpleGame\Renderer.cpp(376,12): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+D:\TUK\3-2\Shader_Programming\BaseProject\SimpleGame\Renderer.cpp(439,12): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+D:\TUK\3-2\Shader_Programming\BaseProject\SimpleGame\Renderer.cpp(606,12): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+D:\TUK\3-2\Shader_Programming\BaseProject\SimpleGame\Renderer.cpp(643,12): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+D:\TUK\3-2\Shader_Programming\BaseProject\SimpleGame\Renderer.cpp(971,9): warning C4101: 'textureId' :참조되지 않은 지역 변수입니다.
+D:\TUK\3-2\Shader_Programming\BaseProject\SimpleGame\Renderer.cpp(1155,56): warning C4244: '인수': 'GLuint'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\TUK\3-2\Shader_Programming\BaseProject\SimpleGame\Renderer.cpp(1156,56): warning C4244: '인수': 'GLuint'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   SimpleGame.vcxproj -> D:\TUK\3-2\Shader_Programming\BaseProject\x64\Debug\SimpleGame.exe

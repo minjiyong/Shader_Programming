@@ -85,5 +85,11 @@
     <None Include="Shaders\FS.vs">
       <Filter>소스 파일\Shaders</Filter>
     </None>
+    <None Include="Shaders\Texture.fs">
+      <Filter>소스 파일\Shaders</Filter>
+    </None>
+    <None Include="Shaders\Texture.vs">
+      <Filter>소스 파일\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

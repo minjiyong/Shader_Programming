@@ -24,6 +24,12 @@ public:
 	void DrawFullScreenColor(float r, float g, float b, float a);
 	void DrawFS();
 
+	void DrawTexture(float x, float y, float sx, float sy, 
+		GLuint TexID, GLuint TexID1, GLuint method);
+	void DrawDebugTexture();
+	void DrawFBOs();
+	void DrawBloomParticle();
+
 private:
 	void Initialize(int windowSizeX, int windowSizeY);
 	void CompileAllShaderPrograms();
@@ -35,6 +41,8 @@ private:
 	void GetGLPosition(float x, float y, float *newX, float *newY);
 	void GenerateParticles(int numParticle);
 	void CreateGridMesh(int x, int y);
+
+	void CreateFBOs();
 
 	GLuint CreatePngTexture(char* filePath, GLuint samplingMethod);
 
@@ -78,6 +86,7 @@ private:
 	// Textures
 	GLuint m_RGBTexture = 0;
 	GLuint m_PokeTexture = 0;
+	GLuint m_ParticleTexture = 0;
 
 	// NumberTextures
 	GLuint m_0Texture = 0;
@@ -91,5 +100,34 @@ private:
 	GLuint m_8Texture = 0;
 	GLuint m_9Texture = 0;
 	GLuint m_NumTexture = 0;
+
+	//Texture
+	GLuint m_TexVBO = 0;
+	GLuint m_TexShader = 0;
+
+	//FBO Color Buffers
+	GLuint m_RT0_0 = 0;
+	GLuint m_RT0_1 = 0;
+	GLuint m_RT1_0 = 0;
+	GLuint m_RT1_1 = 0;
+	GLuint m_RT2 = 0;
+	GLuint m_RT3 = 0;
+	GLuint m_RT4 = 0;
+
+	GLuint m_HDRRT0_0 = 0;		// float texture
+	GLuint m_HDRRT0_1 = 0;
+
+	//FBOs
+	GLuint m_FBO0 = 0;
+	GLuint m_FBO1 = 0;
+	GLuint m_FBO2 = 0;
+	GLuint m_FBO3 = 0;
+	GLuint m_FBO4 = 0;
+
+	GLuint m_HDRFBO0 = 0;
+
+	// Blur
+	GLuint m_PingpongFBO[2];
+	GLuint m_PingpongTexture[2];
 };
 

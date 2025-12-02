@@ -8,8 +8,10 @@ in vec3 a_Velocity;
 in float a_LifeTime;
 in float a_Mass;
 in float a_Period;
+in vec2 a_Tex;
 
 out vec4 v_Color;
+out vec2 v_UV;
 
 uniform float u_Time;
 uniform vec3 u_Force;
@@ -93,7 +95,7 @@ void sinParticle()
 
 void circleParticle()
 {
-   vec4 newPosition = vec4(a_Position, 1);
+   vec4 newPosition = vec4(a_Position.xy*5, a_Position.z, 1);
    
    float newTime = u_Time - a_STime;
    float lifeTime = a_LifeTime;
@@ -132,4 +134,6 @@ void main()
    // raining();
    // sinParticle();
    circleParticle();
+
+   v_UV = a_Tex;
 }
